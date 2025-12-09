@@ -43,3 +43,99 @@ nav a {
 nav a:hover {
     color: red;
 }
+
+/* Álvaro Ramírez Pacheco (Desafios 5 - 6) */
+
+/* Reto 5 */
+a[title="W3C"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Reto 6 */
+a:active {
+    color: orange;
+}
+
+a:visited {
+    color: darkviolet;
+}
+
+
+/* Francisco Varela Díaz (Desafios 7 - 8) */
+
+/* Reto 7 */
+h1::before {
+    content: "🌐 ";
+}
+/* Espacios en ambos por cuestiones de diseño */
+h1::after {
+    content: " 🌐";
+}
+
+/* Agrandar la primera letra de cada noticia */
+.noticia p::first-letter {
+    font-size: 29px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* Reto 8 */
+body, p, li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Reto 10 */
+
+body {
+    background-image: linear-gradient(45deg,gray, whitesmoke);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #F3F2DA;
+    color: #666;
+    border-top: 10px solid #ccc;
+}
+
+.noticia {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+nav li {
+    margin: 0 15px;
+    padding: 10px 0;
+}
+
+.noticia {
+    margin: 20px;
+}
+
+.noticia:hover {
+    background-color: #27272c;
+    transition: background-color 0.5s;
+}
+
+.noticia:hover p, .noticia:hover h2 {
+    color: white;
+    transition: color 0.5s !important;
+}
+
+li:hover {
+    background-color: #000000;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
